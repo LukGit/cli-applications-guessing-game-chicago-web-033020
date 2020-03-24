@@ -7,10 +7,10 @@ def run_guessing_game
   if user_input.to_i > 0
     do_guess(user_input.to_i, num)
   else
-    if user_input.is_a? Numeric
-      puts "not integer"
-    elsif user_input == "exit"
+    if user_input == "exit"
       puts "Goodbye!"
+    else
+      puts "not integer!"
     end
   end
 end 

@@ -2,6 +2,7 @@
 require 'pry'
 def run_guessing_game 
   num = gen_number
+  prompt_user
   user_input = get_user_input
   if user_input.to_i > 0
     do_guess(user_input.to_i, num)
